@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Conditional Statements</title>
+</head>
+<body>
+
+    <h2>JavaScript Conditional Statements Demo</h2>
+
+    <script>
+        // Input values
+        let age = 20;
+        let marks = 72;
+        let day = 3;
+        let username = "admin";
+        let password = "1234";
+
+        // 1. if statement
+        if (age >= 18) {
+            document.write("1. You are eligible to vote<br>");
+        }
+
+        // 2. if...else statement
+        if (marks >= 50) {
+            document.write("2. Result: Pass<br>");
+        } else {
+            document.write("2. Result: Fail<br>");
+        }
+
+        // 3. if...else if...else statement
+        if (marks >= 90) {
+            document.write("3. Grade: A<br>");
+        } else if (marks >= 75) {
+            document.write("3. Grade: B<br>");
+        } else if (marks >= 50) {
+            document.write("3. Grade: C<br>");
+        } else {
+            document.write("3. Grade: F<br>");
+        }
+
+        // 4. Nested if statement
+        if (username === "admin") {
+            if (password === "1234") {
+                document.write("4. Login Successful<br>");
+            } else {
+                document.write("4. Wrong Password<br>");
+            }
+        }
+
+        // 5. switch statement
+        switch (day) {
+            case 1:
+                document.write("5. Day: Monday<br>");
+                break;
+            case 2:
+                document.write("5. Day: Tuesday<br>");
+                break;
+            case 3:
+                document.write("5. Day: Wednesday<br>");
+                break;
+            default:
+                document.write("5. Invalid Day<br>");
+        }
+
+        // 6. Ternary operator
+        let status = (age >= 18) ? "Adult" : "Minor";
+        document.write("6. Status: " + status + "<br>");
+    </script>
+
+</body>
+</html>
